@@ -33,7 +33,11 @@ configuration file.
 '''
 
 BRIDGES = {
-    'LORO': [
+      'BM2140': [
+            {'SYSTEM': 'MASTER-1',    'TS': 2, 'TGID': 2149,    'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [2149], 'OFF': [9990], 'RESET': [2149]},
+            {'SYSTEM': 'LINK-HBLINKSPAIN',    'TS': 2, 'TGID': 2149, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+        ], 
+       'LORO': [
             {'SYSTEM': 'MASTER-1',    'TS': 2, 'TGID': 9990,    'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
             {'SYSTEM': 'LORO',    'TS': 2, 'TGID': 9990, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
          ]
